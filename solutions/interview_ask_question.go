@@ -85,3 +85,26 @@ func FindFirstNameDistinctCountEmployee() {
 	// Time Complexity: O(n), where n is the number of employees in the list.
 	// Space Complexity: O(d), where d is the number of distinct first names.
 }
+
+// ReverseGivenIntegerNumber reverses the digits of a given integer.
+// It takes an integer 'number' as input and prints the reversed number.
+func ReverseGivenIntegerNumber(number int) {
+	// Initialize a variable to store the reversed number
+	revNumber := 0
+
+	// Iterate through each digit of the original number
+	for number != 0 {
+		// Extract the last digit of the number
+		remainder := number % 10
+
+		// Build the reversed number by adding the remainder
+		// and multiplying the existing reversed number by 10
+		revNumber = revNumber*10 + remainder
+
+		// Remove the last digit from the original number
+		number = number / 10
+	}
+
+	// Print the reversed number
+	fmt.Printf("Reversed Number: %v\n", revNumber)
+}

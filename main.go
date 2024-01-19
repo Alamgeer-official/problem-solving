@@ -9,5 +9,8 @@ func main() {
 	fmt.Println("PS")
 
 	// Asked in chetu Inc.
-	solutions.FindFirstNameDistinctCountEmployee()
+	// solutions.FindFirstNameDistinctCountEmployee()
+
+	//  mosted basic asked question (for freshers but basic understanding for numbering )
+	// solutions.ReverseGivenIntegerNumber(232144)
 }
