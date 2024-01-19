@@ -7,5 +7,7 @@ import (
 
 func main() {
 	fmt.Println("PS")
+
+	// Asked in chetu Inc.
 	solutions.FindFirstNameDistinctCountEmployee()
 }
