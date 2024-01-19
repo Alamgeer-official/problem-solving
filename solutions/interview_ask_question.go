@@ -89,6 +89,22 @@ func FindFirstNameDistinctCountEmployee() {
 // ReverseGivenIntegerNumber reverses the digits of a given integer.
 // It takes an integer 'number' as input and prints the reversed number.
 func ReverseGivenIntegerNumber(number int) {
+	// Problem Statement:
+	// Given an integer, reverse its digits.
+
+	// Logic:
+	// The function uses a loop to extract the last digit of the input number,
+	// adds it to the reversed number, and multiplies the reversed number by 10.
+	// This process is repeated until all digits are processed.
+
+	// Time Complexity:
+	// The time complexity is O(log10(number)), where 'number' is the input integer.
+	// The loop iterates once for each digit in the input number.
+
+	// Space Complexity:
+	// The space complexity is O(1) as the function uses a constant amount of space
+	// regardless of the input size.
+
 	// Initialize a variable to store the reversed number
 	revNumber := 0
 
