@@ -46,6 +46,13 @@ func main() {
 	// 1
 	pattern6(4)
 
+	//  7)
+	// 	  *
+	// 	 ***
+	//  *****
+	// *******
+	pattern7(4)
+
 }
 
 func pattern1(n int) {
@@ -108,4 +115,25 @@ func pattern6(n int) {
 		fmt.Printf("\n")
 	}
 
+}
+
+func pattern7(n int) {
+
+	fmt.Print("\n7th problem output\n")
+	for row := 0; row < n; row++ {
+		//for spaces
+		for col := 0; col < n-row-1; col++ {
+			fmt.Printf(" ")
+		}
+		//for *
+		for col := 0; col < 2*row+1; col++ {
+			fmt.Printf("*")
+		}
+		//for spaces
+		for col := 0; col < n-row-1; col++ {
+			fmt.Printf(" ")
+		}
+
+		fmt.Println()
+	}
 }
