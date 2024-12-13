@@ -124,3 +124,35 @@ func ReverseGivenIntegerNumber(number int) {
 	// Print the reversed number
 	fmt.Printf("Reversed Number: %v\n", revNumber)
 }
+
+
+func FindCommonString() {
+
+	fmt.Println("start.........")
+	str1 := "abcd"
+	str2 := "cdxuy"
+
+	commonChan := make(chan rune)
+
+	go func() {
+
+		hash := make(map[rune]bool)
+		for _, char := range str1 {
+			hash[char] = true
+		}
+
+		for _, char := range str2 {
+			if hash[char] {
+				commonChan <- char
+			}
+		}
+		close(commonChan)
+
+	}()
+
+	for c := range commonChan {
+		fmt.Printf("%c\n", c)
+	}
+
+}
+
