@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	// "problem_solving/solutions"
+	"problem_solving/solutions"
 )
 
 func main() {
@@ -13,4 +13,7 @@ func main() {
 
 	//  mosted basic asked question (for freshers but basic understanding for numbering )
 	// solutions.ReverseGivenIntegerNumber(232144)
+
+	// asked in random interview 
+	// solutions.FindCommonString()
 }
