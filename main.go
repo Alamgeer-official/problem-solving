@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"problem_solving/solutions"
 )
 
 func main() {
@@ -20,5 +21,8 @@ func main() {
 	//asked in Quest Global
 	//concurrency
 	// solutions.ProducerConsumer()
+	solutions.StackQuestions()
+
+	
 
 }
