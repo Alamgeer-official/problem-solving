@@ -125,7 +125,6 @@ func ReverseGivenIntegerNumber(number int) {
 	fmt.Printf("Reversed Number: %v\n", revNumber)
 }
 
-
 func FindCommonString() {
 
 	fmt.Println("start.........")
@@ -156,3 +155,22 @@ func FindCommonString() {
 
 }
 
+func ReverseStringAndPrint() {
+
+	input := "TEST"
+	// Convert string to a slice of runes to handle Unicode characters
+	runes := []rune(input)
+	n := len(runes) - 1 // Use len(runes) - 1 for clarity
+
+	// Reverse the slice of runes in place
+	for i := 0; i < len(runes)/2; i++ {
+		runes[i], runes[n-i] = runes[n-i], runes[i]
+	}
+
+	// Convert the slice of runes back to a string
+	reversed := string(runes)
+
+	// Print the original and reversed strings
+	fmt.Println("Original:", input)
+	fmt.Println("Reversed:", reversed)
+}
